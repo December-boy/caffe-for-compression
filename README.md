@@ -296,10 +296,12 @@ examples/siamese/convert_mnist_siamese_data.cpp
 
 ### 存储空间
 
-|model	|storage（before）	|storage(after)	|rate|
-|------|----|------|------|
-|LeNet	|1.7M	|340K	|5:1|
-|类AlexNet|	99.6M	|16M	|6:1|
+model	|storage（before）	|storage(after)	|rate
+------|----|------|------
+LeNet	|1.7M	|340K	|5:1
+类AlexNet|	99.6M	|16M	|6:1
+
+
 因为我们只对全连接层进行了剪枝，所以后面的类AlexNet的压缩比会更大一些，如果我们模型更加复杂，压缩比会更大一些，除此之外，对卷积层也进行剪枝的话，也会进一步提高压缩比。
 
 ### 运行速度
