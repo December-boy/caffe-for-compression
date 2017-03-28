@@ -42,7 +42,7 @@ if(sparse_&&FLAGS_step!="three")
 我们将步骤一中最先保存的caffemodel记为origin，小值置为零的caffemodel记为fixed，将步骤二中再次训练好的caffemodel记为retune。这三个不同的caffemodel除了名字之外，还有很多不同，下面通过表格列举一下。
 
 model  |data	|diff	|mask	|csr	|是否为稀疏矩阵
----|
+---|---|---|---|---|---
 origin	|保存	|不保存	|保存	|保存	|否
 fixed	|保存	|不保存	|保存	|保存	|是
 retune	|不保存	|不保存	|不保存	|保存	|是
